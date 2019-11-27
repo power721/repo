@@ -12,6 +12,7 @@ sudo make install
 sudo mkdir /etc/redis
 sudo cp /tmp/redis-stable/redis.conf /etc/redis
 sudo sed -i 's/supervised no/supervised systemd/' /etc/redis/redis.conf
+sudo sed -i 's/protected-mode yes/protected-mode no/' /etc/redis/redis.conf
 sudo sed -i 's/bind 127.0.0.1/#bind 127.0.0.1/' /etc/redis/redis.conf
 sudo sed -i 's/# cluster-enabled yes/cluster-enabled yes/' /etc/redis/redis.conf
 sudo sed -i 's#dir ./#dir /var/lib/redis#' /etc/redis/redis.conf
