@@ -30,9 +30,11 @@ WantedBy=multi-user.target
 EOF
 
 sudo cp redis.service /etc/systemd/system/redis.service
+
 sudo adduser --system --group --no-create-home redis
 sudo mkdir /var/lib/redis
 sudo chown redis:redis /var/lib/redis
 sudo chmod 770 /var/lib/redis
+
 sudo systemctl start redis
 sudo systemctl status redis
