@@ -15,7 +15,7 @@ sudo sed -i 's/supervised no/supervised systemd/' /etc/redis/redis.conf
 sudo sed -i 's/protected-mode yes/protected-mode no/' /etc/redis/redis.conf
 sudo sed -i 's/bind 127.0.0.1/#bind 127.0.0.1/' /etc/redis/redis.conf
 sudo sed -i 's/# cluster-enabled yes/cluster-enabled yes/' /etc/redis/redis.conf
-sudo sed -i 's#logfile ""#logfile "/var/log/redis.log"#' /etc/redis/redis.conf
+sudo sed -i 's#logfile ""#logfile "/var/lib/redis/redis.log"#' /etc/redis/redis.conf
 sudo sed -i 's#dir ./#dir /var/lib/redis#' /etc/redis/redis.conf
 cat >redis.service <<EOF
 [Unit]
