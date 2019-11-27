@@ -12,6 +12,7 @@ sudo make install
 sudo mkdir /etc/redis
 sudo cp /tmp/redis-stable/redis.conf /etc/redis
 sudo sed -i 's/supervised no/supervised systemd/' /etc/redis/redis.conf
+sudo sed -i 's#logfile ""#logfile "/var/log/redis.log"#' /etc/redis/redis.conf
 sudo sed -i 's#dir ./#dir /var/lib/redis#' /etc/redis/redis.conf
 cat >redis.service <<EOF
 [Unit]
