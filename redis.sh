@@ -13,7 +13,7 @@ sudo mkdir /etc/redis
 sudo cp /tmp/redis-stable/redis.conf /etc/redis
 sudo sed -i 's/supervised no/supervised systemd/' /etc/redis/redis.conf
 sudo sed -i 's#dir ./#dir /var/lib/redis#' /etc/redis/redis.conf
-sudo cat >/etc/systemd/system/redis.service <<EOF
+cat >redis.service <<EOF
 [Unit]
 Description=Redis In-Memory Data Store
 After=network.target
@@ -29,6 +29,7 @@ Restart=always
 WantedBy=multi-user.target
 EOF
 
+sudo cp redis.service /etc/systemd/system/redis.service
 sudo adduser --system --group --no-create-home redis
 sudo mkdir /var/lib/redis
 sudo chown redis:redis /var/lib/redis
