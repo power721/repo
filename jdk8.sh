@@ -4,7 +4,7 @@ wget -O /tmp/jdk8.tgz https://github.com/frekele/oracle-java/releases/download/8
 sudo mkdir -p /usr/lib/jvm
 sudo tar xf /tmp/jdk8.tgz -C /usr/lib/jvm
 VERSION=jdk1.8.0_212
-PRIORITY=180
+PRIORITY=100
 sudo chown -R root:root /usr/lib/jvm/${VERSION}
 sudo update-alternatives --install /usr/bin/appletviewer appletviewer /usr/lib/jvm/${VERSION}/bin/appletviewer ${PRIORITY}
 sudo update-alternatives --install /usr/bin/extcheck extcheck /usr/lib/jvm/${VERSION}/bin/extcheck ${PRIORITY}
