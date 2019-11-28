@@ -16,3 +16,12 @@
 4. Nodejs
 
     `wget -O - https://gitee.com/power/repo/raw/master/node.sh | sh`
+5. Ant
+
+    `wget -O - https://gitee.com/power/repo/raw/master/ant.sh | sh`
+6. Maven
+
+    `wget -O - https://gitee.com/power/repo/raw/master/maven.sh | sh`
+7. Go
+
+    `wget -O - https://gitee.com/power/repo/raw/master/go.sh | sh`
