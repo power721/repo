@@ -13,4 +13,4 @@ echo "export GOROOT=/usr/lib/go" >/tmp/go-env.sh
 sudo cp /tmp/go-env.sh /etc/profile.d/
 sudo chmod 444 /etc/profile.d/go-env.sh
 
-echo -n "go version: " && go version
+go version
