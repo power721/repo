@@ -25,3 +25,7 @@
 7. Go
 
     `curl -s https://gitee.com/power/repo/raw/master/go.sh | sh`
+
+8. Kotlin
+
+    `curl -s https://gitee.com/power/repo/raw/master/kotlin.sh | sh`
