@@ -3,7 +3,7 @@
 VERSION=1.9.13
 PRIORITY=100
 
-wget -O /tmp/ant.tgz https://archive.apache.org/dist/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.gz
+wget -O /tmp/ant.tgz https://archive.apache.org/dist/ant/binaries/apache-ant-${VERSION}-bin.tar.gz
 sudo tar xf /tmp/ant.tgz -C /usr/lib
 sudo chown -R root:root /usr/lib/apache-ant-${VERSION}
 
