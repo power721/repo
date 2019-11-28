@@ -53,6 +53,7 @@ sudo update-alternatives --install /usr/bin/wsgen wsgen /usr/lib/jvm/${VERSION}/
 sudo update-alternatives --install /usr/bin/wsimport wsimport /usr/lib/jvm/${VERSION}/bin/wsimport 180
 sudo update-alternatives --install /usr/bin/xjc xjc /usr/lib/jvm/${VERSION}/bin/xjc 180
 
+update-alternatives --display java
 update-alternatives --display javac
 
 java -version
