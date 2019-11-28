@@ -1,0 +1,21 @@
+[client]
+default-character-set = utf8mb4
+
+[mysql]
+default-character-set = utf8mb4
+
+[mysqld]
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+
+# Increase performance
+innodb_file_format=barracuda
+innodb_file_format_max=barracuda
+innodb_file_per_table=1
+innodb_large_prefix=1
+
+# Enable for space/memory saving for large tables
+#innodb_default_row_format=COMPRESSED
+
+# New default for tables MySQL 5.7+ / MariaDB 10.2+
+#innodb_default_row_format=DYNAMIC
