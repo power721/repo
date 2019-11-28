@@ -13,4 +13,4 @@ echo "export ANT_HOME=/usr/lib/apache-ant-${VERSION}" >/tmp/ant-env.sh
 sudo cp /tmp/ant-env.sh /etc/profile.d/
 sudo chmod 444 /etc/profile.d/ant-env.sh
 
-echo -n "ant version: " && ant -v
+echo -n "ant version: " && ant -version
