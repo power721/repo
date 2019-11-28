@@ -3,7 +3,7 @@
 VERSION=3.6.1
 PRIORITY=100
 
-wget -O /tmp/maven.tgz https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz
+wget -O /tmp/maven.tgz https://archive.apache.org/dist/maven/maven-3/${VERSION}/binaries/apache-maven-${VERSION}-bin.tar.gz
 sudo tar xf /tmp/maven.tgz -C /usr/lib
 sudo chown -R root:root /usr/lib/apache-maven-${VERSION}
 sudo find /usr/lib/apache-maven-${VERSION} -type d  -exec chmod 755 {} \;
