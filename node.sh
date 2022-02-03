@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=12.13.1
+VERSION=16.13.2
 PRIORITY=100
 wget -O /tmp/node.tgz https://nodejs.org/dist/v${VERSION}/node-v${VERSION}-linux-x64.tar.xz
 sudo tar xf /tmp/node.tgz -C /usr/lib
