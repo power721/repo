@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wget -O /tmp/jdk8.tgz https://github.com/frekele/oracle-java/releases/download/8u212-b10/jdk-8u212-linux-x64.tar.gz
+wget -O /tmp/jdk8.tgz https://github.com/power721/repo/releases/download/JDK/jdk-8u321-linux-x64.tar.gz
 sudo mkdir -p /usr/lib/jvm
 sudo tar xf /tmp/jdk8.tgz -C /usr/lib/jvm
 VERSION=jdk1.8.0_212
