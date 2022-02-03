@@ -3,7 +3,7 @@
 wget -O /tmp/jdk8.tgz https://github.com/power721/repo/releases/download/JDK/jdk-8u321-linux-x64.tar.gz
 sudo mkdir -p /usr/lib/jvm
 sudo tar xf /tmp/jdk8.tgz -C /usr/lib/jvm
-VERSION=jdk1.8.0_212
+VERSION=jdk1.8.0_321
 PRIORITY=100
 sudo chown -R root:root /usr/lib/jvm/${VERSION}
 sudo update-alternatives --install /usr/bin/appletviewer appletviewer /usr/lib/jvm/${VERSION}/bin/appletviewer ${PRIORITY}
