@@ -5,6 +5,7 @@
 1.  Oracle JDK 8
 
     `curl -s https://gitee.com/power/repo/raw/master/jdk8.sh | sh`
+
     `curl -s https://gitee.com/power/repo/raw/master/jre8.sh | sh`
 2.  Nginx
 
