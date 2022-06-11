@@ -13,6 +13,8 @@
 3.  Docker
 
     `curl -s https://gitee.com/power/repo/raw/master/docker.sh | sh`
+
+    `curl -s https://gitee.com/power/repo/raw/master/docker_mint.sh | sh`
 4.  Redis
 
     `curl -s https://gitee.com/power/repo/raw/master/redis.sh | sh`
