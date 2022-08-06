@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=1.3.60
+VERSION=1.6.21
 PRIORITY=100
 
 sudo apt install unzip
