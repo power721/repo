@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=1.18.3
+VERSION=1.19
 PRIORITY=100
 
 wget -O /tmp/go.tgz --no-check-certificate https://go.dev/dl/go${VERSION}.linux-amd64.tar.gz
