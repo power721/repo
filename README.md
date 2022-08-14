@@ -7,7 +7,12 @@
     `curl -s https://gitee.com/power/repo/raw/master/jdk8.sh | sh`
 
     `curl -s https://gitee.com/power/repo/raw/master/jre8.sh | sh`
-2.  Nginx
+2. Amazon Corretto JDK
+
+    `curl -s https://gitee.com/power/repo/raw/master/jdk11.sh | sh`
+
+    `curl -s https://gitee.com/power/repo/raw/master/jdk17.sh | sh`
+4.    Nginx
 
     `curl -s https://gitee.com/power/repo/raw/master/nginx.sh | sh`
 3.  Docker
