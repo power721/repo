@@ -12,7 +12,7 @@
     `curl -s https://gitee.com/power/repo/raw/master/jdk11.sh | sh`
 
     `curl -s https://gitee.com/power/repo/raw/master/jdk17.sh | sh`
-4.    Nginx
+4. Nginx
 
     `curl -s https://gitee.com/power/repo/raw/master/nginx.sh | sh`
 3.  Docker
