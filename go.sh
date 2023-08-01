@@ -9,7 +9,7 @@ sudo chown -R root:root /usr/lib/go
 
 sudo update-alternatives --install /usr/bin/go go /usr/lib/go/bin/go ${PRIORITY}
 
-#echo "export GOROOT=/usr/lib/go" >/tmp/go-env.sh
+echo "export GOROOT=/usr/lib/go" >/tmp/go-env.sh
 sudo cp /tmp/go-env.sh /etc/profile.d/
 sudo chmod 444 /etc/profile.d/go-env.sh
 
