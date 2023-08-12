@@ -12,8 +12,8 @@ else
   wget -O /tmp/graalvm.tgz https://download.oracle.com/graalvm/17/latest/graalvm-jdk-17_linux-x64_bin.tar.gz
 fi
 
-tar xf /tmp/graalvm.tgz -C /opt
-find /opt -name 'graalvm-jdk-*' -exec ln -sf {} graalvm \;
+sudo tar xf /tmp/graalvm.tgz -C /opt
+sudo find /opt -name 'graalvm-jdk-*' -exec ln -sf {} graalvm \;
 
 echo 'export MAVEN_HOME=/opt/maven' > /tmp/graalvm.sh
 echo 'export JAVA_HOME=/opt/graalvm' >> /tmp/graalvm.sh
