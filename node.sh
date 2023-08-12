@@ -1,8 +1,20 @@
 #!/usr/bin/env bash
 
+if command -v arch >/dev/null 2>&1; then
+  platform=$(arch)
+else
+  platform=$(uname -m)
+fi
+
 VERSION=18.17.0
 PRIORITY=100
-wget -O /tmp/node.tgz https://nodejs.org/dist/v${VERSION}/node-v${VERSION}-linux-x64.tar.xz
+
+if [ "$platform" = "aarch64" ]; then
+  wget -O /tmp/node.tgz https://nodejs.org/dist/v${VERSION}/node-v${VERSION}-linux-arm64.tar.xz
+else
+  wget -O /tmp/node.tgz https://nodejs.org/dist/v${VERSION}/node-v${VERSION}-linux-x64.tar.xz
+fi
+
 sudo tar xf /tmp/node.tgz -C /usr/lib
 sudo chown -R root:root /usr/lib/node-v${VERSION}-linux-x64
 
