@@ -13,6 +13,7 @@ ARCH=x64
 if [ "$platform" = "aarch64" ]; then
 	ARCH=arm64
 fi
+echo "platform: ${platform} arch: ${ARCH}"
 wget -O /tmp/node.tgz https://nodejs.org/dist/v${VERSION}/node-v${VERSION}-linux-${ARCH}.tar.xz
 sudo tar xf /tmp/node.tgz -C /usr/lib
 sudo chown -R root:root /usr/lib/node-v${VERSION}-linux-${ARCH}
