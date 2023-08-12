@@ -15,11 +15,11 @@ fi
 tar xf /tmp/graalvm.tgz -C /opt
 find /opt -name 'graalvm-jdk-*' -exec ln -sf {} graalvm \;
 
-echo 'export MAVEN_HOME=/opt/maven' > graalvm.sh
-echo 'export JAVA_HOME=/opt/graalvm' >> graalvm.sh
-echo 'export GRAALVM_HOME=/opt/graalvm' >> graalvm.sh
-echo 'export PATH="${JAVA_HOME}/bin:${PATH}"' >> graalvm.sh
-sudo mv graalvm.sh /etc/profile.d/graalvm.sh
+echo 'export MAVEN_HOME=/opt/maven' > /tmp/graalvm.sh
+echo 'export JAVA_HOME=/opt/graalvm' >> /tmp/graalvm.sh
+echo 'export GRAALVM_HOME=/opt/graalvm' >> /tmp/graalvm.sh
+echo 'export PATH="${JAVA_HOME}/bin:${PATH}"' >> /tmp/graalvm.sh
+sudo mv /tmp/graalvm.sh /etc/profile.d/graalvm.sh
 sudo chmod 444 /etc/profile.d/graalvm.sh
 
 rm -f /tmp/graalvm.tgz
