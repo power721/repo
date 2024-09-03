@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=3.9.5
+VERSION=3.9.9
 PRIORITY=100
 
 wget -O /tmp/maven.tgz https://archive.apache.org/dist/maven/maven-3/${VERSION}/binaries/apache-maven-${VERSION}-bin.tar.gz
