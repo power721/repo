@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=1.23.0
+VERSION=1.24.5
 PRIORITY=100
 
 if command -v arch >/dev/null 2>&1; then
