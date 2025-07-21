@@ -6,7 +6,7 @@ else
   platform=$(uname -m)
 fi
 
-VERSION=20.17.0
+VERSION=22.17.1
 PRIORITY=100
 
 ARCH=x64
