@@ -12,6 +12,8 @@
     `curl -s https://raw.githubusercontent.com/power721/repo/refs/heads/master/jdk11.sh | sh`
 
     `curl -s https://raw.githubusercontent.com/power721/repo/refs/heads/master/jdk17.sh | sh`
+
+    `curl -s https://raw.githubusercontent.com/power721/repo/refs/heads/master/jdk21.sh | sh`
 4. Nginx
 
     `curl -s https://raw.githubusercontent.com/power721/repo/refs/heads/master/nginx.sh | sh`
